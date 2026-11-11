@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How the Studizen Chrome extension stores and uses information.">
+  <title>Studizen Privacy Policy</title>
+  <style>
+    :root { color-scheme: dark; font: 16px/1.65 Manrope, Arial, sans-serif; background: #111821; color: #e7edf7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { width: min(760px, calc(100% - 36px)); margin: 48px auto; }
+    h1, h2 { line-height: 1.25; font-weight: 600; }
+    h1 { margin: 0 0 8px; font-size: 32px; }
+    h2 { margin: 30px 0 8px; font-size: 19px; }
+    p, li { color: #b5c1d2; }
+    a { color: #83a9ff; }
+    .updated { margin: 0 0 28px; color: #91a0b4; font-size: 13px; }
+    section { padding-bottom: 2px; }
+    @media (max-width: 560px) { main { margin: 28px auto; } h1 { font-size: 27px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Studizen Privacy Policy</h1>
+    <p class="updated">Last updated: November 11, 2026</p>
+    <p>This policy explains what the Studizen Chrome extension stores, how its features use that information, and when information leaves your device.</p>
+
+    <section>
+      <h2>Information stored in your browser</h2>
+      <p>Studizen stores extension data in Chrome local extension storage. Some interface preferences, drafts, and imported-music metadata use this browser's local storage; short-lived interface and handoff state may use session storage. Studizen does not use a Studizen account or cloud-sync service. Chrome or your device may separately back up or manage browser-profile data according to your own settings.</p>
+      <p>Depending on the features you use, local records can include:</p>
+      <ul>
+        <li>Your optional name, study profile, selected theme, focus defaults, sound preferences, and other settings.</li>
+        <li>Courses and libraries you create, including course titles, subjects, library assignments, and links; notes, checklists, daily goals, and completed tasks you enter.</li>
+        <li>Focus-session identifiers, course and subject associations, start/end times, active study intervals, planned and actual durations, status, and related progress. Analytics and Daily Goals use local session and daily records.</li>
+        <li>XP, rewards, badges, streaks, and other study-progress records.</li>
+        <li>When site protection is used, limited local protection events such as a site host, timestamp, event type, and reason. These event records do not retain the full page path or query string.</li>
+        <li>If Camera Focus Check is used, attention state and diagnostic metadata described below.</li>
+        <li>Music preferences and metadata for audio files that you choose to import.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Focus sessions and analytics</h2>
+      <p>Focus records are used to show your timers, study history, goals, analytics, streaks, and rewards. Active study intervals are used to exclude paused time and scheduled breaks where the session records provide those intervals. New focus-history entries are normally limited to the most recent 300 records; imported or previously stored history may be retained up to the extension's normalization limit. Daily aggregate records are retained until you use the applicable data controls, clear extension data, or remove the extension.</p>
+      <p>Reward history is limited by the app to recent records. Individual notes, courses, goals, and tasks remain in local browser storage until you delete them or clear the relevant Studizen data. An exported backup may contain the records included by the export feature and is saved wherever you choose; anyone with access to that file may be able to read it.</p>
+    </section>
+
+    <section>
+      <h2>Website protection and browsing activity</h2>
+      <p>When site restriction or Distraction Protection is enabled, Studizen reads HTTP and HTTPS tab addresses locally to compare the site with your saved rules and course links, and may redirect a disallowed page. This access is used to provide protection; the extension does not build or send a general browsing-history report to Studizen.</p>
+      <p>For applicable protection events in regular browser windows, Studizen can retain a limited local event record containing the site host, time, event type, and reason. The code limits these event logs to recent records (under 24 hours and up to 120 entries per event bucket). Incognito Protection is optional, requires you to enable Studizen in Chrome's Incognito settings, and does not persist Incognito blocked-site events.</p>
+      <p>When you open a website or course link, the browser sends the ordinary network request to that website. That communication is between your browser and the destination and is not a Studizen analytics upload.</p>
+    </section>
+
+    <section>
+      <h2>YouTube course titles</h2>
+      <p>When you choose Studizen's YouTube right-click command, the extension uses the selected video's URL and available page or thumbnail title to prefill the existing Add Course form. If a title is unavailable from the matching YouTube page, the extension may request YouTube's oEmbed endpoint using that selected video URL to retrieve a title. The request is made directly to YouTube without including your YouTube account credentials. YouTube may receive the requested video URL and ordinary request information.</p>
+      <p>The extension does not save the course automatically: the title and link are added to your Studizen course data only when you submit the Add Course form. Studizen does not send this course information to a Studizen server or a third-party analytics service.</p>
+    </section>
+
+    <section>
+      <h2>Camera Focus Check</h2>
+      <p>Camera Focus Check is optional. It requests camera access only after you choose to allow it and enable the feature. During an active focus session, temporary camera frames are processed on your device by the extension's bundled attention-detection components. The extension does not save or upload camera frames, video, or audio, and stops the camera stream when the check stops.</p>
+      <p>The extension may store the feature's attention state, status or error reason, timestamps, reminder/distraction counts, and diagnostic measurements such as confidence/evidence scores, detection or inference latency, and inference rate. These diagnostics are stored locally to support the feature and its status display; they are not sent to Studizen or a remote model service. If enabled, reminders may use Chrome notifications or the device's local text-to-speech facility.</p>
+    </section>
+
+    <section>
+      <h2>Music and imported files</h2>
+      <p>Music settings and imported-track metadata are stored locally. An audio file you select is played from your device; Studizen does not upload it. The browser may not preserve a temporary file reference after restart, so you may need to select an imported file again.</p>
+    </section>
+
+    <section>
+      <h2>External services and sharing</h2>
+      <p>The extension code reviewed for this policy contains no Studizen account backend or third-party analytics/advertising endpoint. Apart from the conditional YouTube oEmbed title lookup described above and ordinary network requests you initiate by opening websites, the information described in this policy is handled in your browser. Studizen does not sell this information or use it for targeted advertising.</p>
+      <p>This describes the extension's current code and does not change the privacy practices of Chrome, YouTube, websites you visit, or other software on your device. Those services have their own policies.</p>
+    </section>
+
+    <section>
+      <h2>Your choices and data removal</h2>
+      <p>You can turn optional features on or off in Studizen Settings. Camera access is requested only after your action. Chrome controls Incognito access, which you must grant in Chrome's extension settings. You can delete records using Studizen's available data controls, clear the extension's browser data, or remove the extension. Exported backups are separate files and are not deleted when in-extension data is cleared.</p>
+    </section>
+
+    <section>
+      <h2>Storage security</h2>
+      <p>Studizen stores its records using browser storage and does not add a separate encryption layer to those records. Protect access to your device and Chrome profile, and keep exported backup files in a location you trust. This policy does not make a guarantee about Chrome, operating-system, backup, or device security.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Questions about this policy: <a href="mailto:studizen10@gmail.com">studizen10@gmail.com</a>.</p>
+    </section>
+  </main>
+</body>
+</html>
